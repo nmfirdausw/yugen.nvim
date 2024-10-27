@@ -91,7 +91,7 @@ function M.get(config)
     Repeat = { fg = p.color200 },
     Label = { fg = p.color200 },
     Operator = { fg = p.color400 },
-    Keyword = { fg = p.color400 },
+    Keyword = { fg = p.color300 },
     Exception = { fg = p.color200 },
 
     PreProc = { fg = p.color200 },
@@ -170,7 +170,7 @@ function M.get(config)
     ['@punctuation.delimiter'] = { fg = groups.punctuation },
     ['@punctuation.special'] = { fg = groups.punctuation },
     ['@punctuation.bracket'] = { fg = p.color400 },
-    ['@string'] = { fg = p.color400 },
+    ['@string'] = { fg = p.color300 },
     ['@string.escape'] = { fg = p.color100 },
     ['@tag'] = { fg = p.primary },
     ['@tag.delimiter'] = { fg = p.color400 },
