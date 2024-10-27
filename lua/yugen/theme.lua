@@ -21,7 +21,7 @@ function M.get(config)
     Cursor = { fg = p.color200, bg = p.placeholder },
     CursorColumn = { bg = p.color800 },
     CursorLine = { bg = p.color600 },
-    CursorLineNr = { fg = p.color300 },
+    CursorLineNr = { fg = p.color200 },
     DarkenedPanel = { bg = groups.panel },
     DarkenedStatusline = { bg = groups.panel },
     DiffAdd = { bg = p.color700, },
@@ -31,7 +31,7 @@ function M.get(config)
     diffAdded = { link = 'DiffAdd' },
     diffChanged = { link = 'DiffChange' },
     diffRemoved = { link = 'DiffDelete' },
-    Directory = { fg = p.color300, bg = p.none },
+    Directory = { fg = p.color200, bg = p.none },
     ErrorMsg = { fg = p.error, style = 'bold' },
     FloatBorder = { fg = groups.border },
     FloatTitle = { fg = p.color200 },
@@ -97,7 +97,7 @@ function M.get(config)
     PreProc = { fg = p.color200 },
     Include = { fg = p.primary },
 
-    Type = { fg = p.color300 },
+    Type = { fg = p.color200 },
 
     Special = { fg = p.color200 },
     Tag = { fg = p.primary },
@@ -146,27 +146,27 @@ function M.get(config)
     ['@variable'] = { fg = p.color200 },
     ['@boolean'] = { link = 'Boolean' },
     ['@comment'] = { link = 'Comment' },
-    ['@variable.builtin'] = { fg = p.color300 },
-    ['@constant.builtin'] = { fg = p.color300 },
+    ['@variable.builtin'] = { fg = p.color200 },
+    ['@constant.builtin'] = { fg = p.color200 },
     ['@constant.falsy'] = { fg = p.primary },
     ['@constant.rescript'] = { fg = p.primary },
     ['@constant'] = { link = ' Constant' },
     ['@constructor'] = { fg = p.color500 },
     ['field'] = { fg = p.color200 },
-    ['@function.builtin'] = { fg = p.color300 },
+    ['@function.builtin'] = { fg = p.color200 },
     ['@function'] = { link = 'Function' },
     ['@function.call'] = { fg = p.primary },
     TSInclude = { fg = p.color200 },
     ['@keyword.rescript'] = { fg = p.primary },
     ['@keyword'] = { link = 'Keyword' },
-    ['@keyword.return'] = { fg = p.color300 },
-    ['@keyword.function'] = { fg = p.color300 },
+    ['@keyword.return'] = { fg = p.color200 },
+    ['@keyword.function'] = { fg = p.color200 },
     ['@keyword.operator'] = { fg = p.color400 },
     ['@label'] = { fg = p.color500 },
     ['@method'] = { fg = p.primary },
     ['@operator'] = { fg = 'color400' },
     ['@parameter'] = { fg = p.color200 },
-    ['@property'] = { fg = p.color300 },
+    ['@property'] = { fg = p.color200 },
     ['@punctuation.delimiter'] = { fg = groups.punctuation },
     ['@punctuation.special'] = { fg = groups.punctuation },
     ['@punctuation.bracket'] = { fg = p.color400 },
@@ -174,7 +174,7 @@ function M.get(config)
     ['@string.escape'] = { fg = p.color100 },
     ['@tag'] = { fg = p.primary },
     ['@tag.delimiter'] = { fg = p.color400 },
-    ['@tag.attribute'] = { fg = p.color300, style = styles.italic },
+    ['@tag.attribute'] = { fg = p.color200, style = styles.italic },
     ['@text'] = { fg = p.color200 },
     ['@title'] = { fg = groups.headings.h1, style = 'bold' },
     ['@type'] = { link = 'Type' },
@@ -184,12 +184,12 @@ function M.get(config)
     -- tsx
     ['@keyword.export.tsx'] = { fg = p.color400 },
     ['@keyword.import.tsx'] = { fg = p.color400 },
-    ['@import.identifier.tsx'] = { fg = p.color300 },
+    ['@import.identifier.tsx'] = { fg = p.color200 },
 
     -- typescript
     ['@keyword.export.typescript'] = { fg = p.color400 },
     ['@keyword.import.typescript'] = { fg = p.color400 },
-    ['@import.identifier.typescript'] = { fg = p.color300 },
+    ['@import.identifier.typescript'] = { fg = p.color200 },
     typescriptVariable = { fg = p.color200 },
     typescriptExport = { fg = p.color200 },
     typescriptDefault = { fg = p.color200 },
@@ -229,7 +229,7 @@ function M.get(config)
     NvimTreeFileRenamed = { fg = p.color200 },
     NvimTreeFileStaged = { fg = p.color200 },
     NvimTreeFolderIcon = { fg = p.color400 },
-    NvimTreeFolderName = { fg = p.color300 },
+    NvimTreeFolderName = { fg = p.color200 },
     NvimTreeIndentMarker = { fg = p.color600 },
     NvimTreeGitDeleted = { fg = groups.color200 },
     NvimTreeGitDirty = { fg = p.color200 },
@@ -260,7 +260,7 @@ function M.get(config)
     -- Nvim Cmp
     CmpItemAbbr = { fg = p.color200 },
     CmpItemAbbrDeprecated = { fg = p.color700, style = 'strikethrough' },
-    CmpItemAbbrMatch = { fg = p.color300 },
+    CmpItemAbbrMatch = { fg = p.color200 },
     CmpItemAbbrMatchFuzzy = { fg = p.color100 },
     CmpItemKind = { fg = p.primary },
     CmpItemKindClass = { fg = p.primary },
@@ -291,8 +291,8 @@ function M.get(config)
     -- Dashboard
     DashboardFooter = { fg = p.color400, bg = 'none', bold = true },
     BvDashboardKey = { fg = p.primary, bg = 'none', bold = true },
-    BvDashboardItemIcon = { fg = p.color300 },
-    BvDashboardItemText = { fg = p.color300 },
+    BvDashboardItemIcon = { fg = p.color200 },
+    BvDashboardItemText = { fg = p.color200 },
 
     -- code action
     ActionPreviewNormal = { link = 'SagaNormal' },
@@ -356,13 +356,13 @@ function M.get(config)
   }
 
   vim.g.terminal_color_0 = p.color800
-  vim.g.terminal_color_8 = p.color300
+  vim.g.terminal_color_8 = p.color200
   vim.g.terminal_color_1 = p.primary
-  vim.g.terminal_color_9 = p.color300
+  vim.g.terminal_color_9 = p.color200
   vim.g.terminal_color_2 = p.color400
   vim.g.terminal_color_10 = p.color500
   vim.g.terminal_color_3 = p.warning
-  vim.g.terminal_color_11 = p.color300
+  vim.g.terminal_color_11 = p.color200
   vim.g.terminal_color_4 = p.color400
   vim.g.terminal_color_12 = p.primary
   vim.g.terminal_color_5 = p.primary
